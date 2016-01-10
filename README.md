@@ -21,8 +21,9 @@ if(strpos($line, "TODO :") || strpos($line, "TODO:") || strpos($line, "todo:") |
 
 You can change how much code is shown with this line of code:
 ```php
-$code = substr($contents, $match[0]-strlen($match[2]), $match[0]+20);
+$code = substr($contents, $match[0]-strlen($match[2]), 1000);
 ```
-Change the ```$match[0]-strlen($match[2])``` and ```$match[0]+20``` to your fitting.
+Change the ```$match[0]-strlen($match[2])``` and ```1000``` to your fitting.
+
 
 ![alt tag](http://i.imgur.com/V896vga.png)

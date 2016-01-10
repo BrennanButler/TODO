@@ -86,7 +86,7 @@ foreach(new RecursiveIteratorIterator($di) as $filename => $file)
                         echo '<div class="code"><code><pre>';
 
                         $contents = file_get_contents($match[1]);
-                        $code = substr($contents, $match[0]-strlen($match[2]), $match[0]+20);
+                        $code = substr($contents, $match[0]-strlen($match[2]), 1000);
                         echo nl2br($code);
                         echo '</pre></code></div>';
                         echo "<p>$match[1]</p></div>";
